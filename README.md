@@ -11,6 +11,7 @@ Install uWSGI
 - Install uWSGI on Debian 8.
 
     ```
+    sudo apt-get update && apt-get upgrade
     sudo apt-get install uwsgi
     ```
     
