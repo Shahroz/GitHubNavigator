@@ -1,2 +1,2 @@
 # GitHubNavigator
-A Sample Django Git hub repository search app using uWSGI
+A Sample Django search repository app using Github API v3 and uWSGI
