@@ -1,23 +1,20 @@
 # GitHubNavigator
 A Sample Django search repository app using Github API v3 and uWSGI for assignment purpose.
 
-Make Sure you have Linux/OSX Environment
+Make Sure you have Linux/OSX Environment.
 
 Follows Django best practices as much as possible. 
 
-Installation steps on Debian 8
+Install uWSGI
 ------------------------------
 
-- Install uWSGI as system-wide services.
+- Install uWSGI on Debian 8.
 
     ```
     apt-get install uwsgi
     ```
-
-Installation steps on OSX
-------------------------------
-
-- Install uWSGI as system-wide services.
+    
+- Install uWSGI on OSX.
 
     ```
     brew install uwsgi
