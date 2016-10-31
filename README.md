@@ -30,7 +30,7 @@ Install uWSGI
 
 - Create a virtualenv with the latest `pip`, `setuptools`, and `django` packages.
     ```
-    cd /path/to/your/directory/GitHubNavigator
+    cd /path/to/your/directory/GitHubNavigator-master
     virtualenv env
     source env/bin/activate
     pip install -r requirements.txt
@@ -38,7 +38,7 @@ Install uWSGI
 - Finally Serve Django Project with uWSGI.
 
     ```
-    uwsgi --socket /path/to/your/directory/GitHubNavigator/GitHubNavigator.sock --http :8000 --module GitHubNavigator.wsgi:application --enable-threads --home env --vacuum --master
+    uwsgi --socket /path/to/your/directory/GitHubNavigator-master/GitHubNavigator.sock --http :8000 --module GitHubNavigator.wsgi:application --enable-threads --home env --vacuum --master
     ```
 - Check it out!
 
