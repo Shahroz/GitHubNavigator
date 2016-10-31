@@ -1,7 +1,6 @@
 # GitHubNavigator
 A Sample Django search repository app using Github API v3 and uWSGI for assignment purpose.
-
-# Make Sure you have Linux/OSX Environment
+Make Sure you have Linux/OSX Environment
 
 Follows Django best practices as much as possible. 
 
