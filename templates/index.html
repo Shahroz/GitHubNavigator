@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Navigator</title>
+</head>
+<body>
+{% if error %}
+    <h2>Error: {{ error }}</h2>
+{% elif repositories %}
+    <h1>{{ search_term }}</h1>
+    {% for repo in repositories %}
+        <h2>{{ forloop.counter }}. {{ repo.respository_name }}</h2>
+        <h3> Created {{ repo.created_at }}</h3>
+
+        <a href="{{ repo.owner_url }}"><img src="{{ repo.avatar_url }}" alt="avatar" height="42" width="42"/>{{ repo.owner_login }}</a>
+
+        <h3>LastCommit</h3>
+        {{ repo.sha }} {{ repo.commit_message }}  {{ repo.commit_author_name }}
+
+        {% if not forloop.last %}
+            <hr/>
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <h2>No Repository matches for keyword "{{ search_term }}"</h2>
+{% endif %}
